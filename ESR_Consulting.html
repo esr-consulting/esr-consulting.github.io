@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESR Consulting - Safety, Risk & Reliability Engineering </title>
+    <link rel="icon" href="images/ESR.ico">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .main-header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3f6fb6;
+            justify-content: left;
+        }
+
+        .main-nav a {
+            color: #3f6fb6;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgb(255, 255, 255);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            height:230px; 
+            border: 1px solid rgb(255, 255, 255);
+            padding: 25px;
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: grayscale(0.8);
+            opacity:1;
+            background-image: url('images/level_crossing_banner.jpg');  
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: -1px -1px 0 #3f6fb6, -1px 1px 0 #3f6fb6, 1px -1px 0 #3f6fb6, 1px 1px 0 #3f6fb6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .about h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3f6fb6;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px 0;
+        }
+
+        .services h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3f6fb6;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Industries Section */
+        .industries {
+            padding: 40px 0;
+        }
+
+        .industries h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3f6fb6;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        /* Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 2.5rem;
+            color: #3f6fb6;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        .main-footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-icons i {
+            padding-right: 1.5rem
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <img src="images/ESR_logo.jpg" alt="ESR Consulting" style="width:30%;">
+            <div class="logo">
+            </div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Engineering<br>for Safety Critical Systems</h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container"; id="about">
+            <h1>About us</h1>
+            <p>ESR Consulting provides engineering services specialising in the assurance of safety and reliability, <br>
+            systems engineering, and training in the area of high-integrity engineered systems.</p>
+            <p>We have expertise in the interpretation and application of key Australian and international risk and <br>
+                safety management standards, including AS 31000, IEC 61508, EN 50126, EN 50128, EN 50129, <br>
+                and Workplace Health and Safety (WHS), offshore petroleum (OPGGS), Major Hazard Facility (MHF) <br>
+                legislation and regulations, in addition to experience of the respective regulatory environments.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container"; id="services">
+            <h1>Services</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+                    <h3>Risk Engineering</h3>
+                    <p>ESR Consulting provides services in risk engineering and management. We have performed risk identification, qualitative and quantitative analysis and assessments for offshore facility operators and operators and suppliers in the rail industry.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Safety Engineering</h3>
+                    <p>ESR Consulting supports operators and suppliers in planning and executing their system safety programs, including safety case development, feasibility studies, and review and assessment of client Safety Management Systems.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Systems Engineering</h3>
+                    <p>ESR Consulting helps organisations with all aspects of their systems engineering programs, including system concept development, system definition, planning and requirements engineering, verification and validation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Reliability Engineering</h3>
+                    <p>ESR Consulting provides services in Reliability, Availability and Maintainability (RAM) engineering and management. We have developed tailored RAM strategies and plans, and performed reliability modelling and analysis for operators and suppliers in the rail industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="industries">
+        <div class="container"; id="industries">
+            <h1>Industries</h1>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-fire"></i></div>
+                    <h3>Energy</h3>
+                    <p>Offshore Support Vessel Safety Cases</p>
+                    <p>Diving Support Vessel Safety Cases</p>
+                    <p>Major Hazard Facility Safety Cases</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-train"></i></div>
+                    <h3>Railways</h3>
+                    <p>Communications-Based Train Control systems</p>
+                    <p>Conventional Train Control systems</p>
+                    <p>Telecommunications and information systems</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-wind"></i></div>
+                    <h3>Mining & Renewables</h3>
+                    <p>Heavy-haul railway systems</p>
+                    <p>Telecommunications and information systems</p>
+                    <p>Autonomous systems</p>
+                    <p>Battery systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container"; id="contact">
+            <div style="text-align:Left;">
+                <p><b>ESR Consulting</b><br>
+                Perth, Western Australia<br> </p>
+            </div>
+            <div class="footer-icons"; style="text-align:center;">
+                <p><i class="fas fa-dragon"></i>
+                <span>Valar Dohaeris</span>
+                <i class="fas fa-dragon fa-flip-horizontal"></i> <br>
+                &copy; 2025 ESR Consulting. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links"; style="text-align:right">
+                <a href="mailto:info.esr.consulting@gmail.com">info.esr.consulting@gmail.com</a> <br>
+                <a href="https://www.linkedin.com/company/consult-esr" target="_blank">
+                <i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
